@@ -133,7 +133,14 @@ aside {
 .product {
   --_padding: 1rem;
 
+  /* Each Product card will spend 3 rows. It actually got 3 elements: <img>, <h3>, <div> */
+  grid-row: span 3;
+
   display: grid;
+
+  /* This one, together with grid-row: span 3, force current grid to align with the 3 rows defined parent's grid-auto-rows */
+  grid-template-rows: subgrid;
+
   gap: 1rem;
   background: var(--clr-primary-700);
   border-radius: 0.5rem;
