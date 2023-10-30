@@ -139,7 +139,7 @@ aside {
   display: grid;
 
   /* This one, together with grid-row: span 3, force current grid to align with the 3 rows defined parent's grid-auto-rows */
-  grid-template-rows: subgrid;
+  /*grid-template-rows: subgrid;*/
 
   gap: 1rem;
   background: var(--clr-primary-700);
@@ -157,7 +157,10 @@ aside {
 
 .product > img {
   width: 100%;
-  height: 120px;
+
+  height: 100%;
+  /*height: 120px;*/
+
   object-fit: cover;
 }
 
