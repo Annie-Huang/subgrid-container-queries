@@ -127,6 +127,8 @@ aside {
   /* This is to lock the 1st row to be 120px and the 2nd and 3rd rows are auto height. And then repeat again for the next 3 rows */
   grid-auto-rows: 120px auto auto;
 
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/container-type */
+  /* It cannot be in the layer where subgrid is defined */
   container-type: inline-size;
 }
 
