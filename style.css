@@ -185,5 +185,9 @@ aside {
   /* Do it on the container */
   @container (min-width: 750px) {
     grid-column: span 2;
+
+    .product__description {
+      display: block;
+    }
   }
 }
