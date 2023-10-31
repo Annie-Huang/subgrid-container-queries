@@ -188,16 +188,24 @@ aside {
     grid-template-columns: subgrid;
 
     > img {
-      grid-column: span 2;
+      grid-column: 1 / -1;
     }
     > .product__title {
       font-size: 2rem;
-      grid-column: span 2;
+      grid-column: 1 / -1;
     }
 
     .product__description {
       display: block;
       margin-bottom: var(--_padding);
+    }
+  }
+
+  @container (min-width: 1000px) {
+    grid-column: span 3;
+
+    .product__description {
+      grid-column: span 2;
     }
   }
 }
